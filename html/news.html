@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Product Store</title>
+
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- If live compile jsx -->
+	<!-- <script src="../js/vendor/babel/browser.min.js"></script> -->
+
+	<!-- Polyfills -->
+	<script src="../js/vendor/babel/polyfill.min.js"></script>
+	<script src="../js/vendor/fetch.polyfill.js"></script>
+
+	<!-- React -->
+	<!-- <script src="../react/libs/react-with-addons.min.js"></script> -->
+	<!-- <script src="../react/libs/react-dom.min.js"></script> -->
+
+	<!-- Whole site components (header, footer, nav, etc.) -->
+	<script src="../react/app.config.js"></script>
+	<!-- <script type="text/babel" src="../react/component/SiteHeader.jsx"></script> -->
+	<!-- <script type="text/babel" src="../react/component/SiteFooter.jsx"></script> -->
+	<!-- <script type="text/babel" src="../react/component/SiteNav.jsx"></script> -->
+</head>
+
+<body>
+	<div class="component-site-header"></div>
+	<div class="component-site-nav"></div>
+
+	<div class="component-data-list"></div>
+
+	<div class="component-site-footer"></div>
+
+	<!-- Page specific components -->
+	<script>var API_PATH = CONFIG.api.news</script>
+	<!-- <script type="text/babel" src="../react/component/DataList.jsx"></script> -->
+	<script src="../js/bundle.js"></script>
+</body>
+
+</html>

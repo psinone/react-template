@@ -1,0 +1,34 @@
+
+//break point settings
+@mixin bp-large {
+  @media only screen and (max-width: 60em) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media only screen and (max-width: 40em) {
+    @content;
+  }
+}
+
+@mixin bp-small {
+  @media only screen and (max-width: 30em) {
+    @content;
+  }
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin border-radius($radiusVal){
+  -webkit-border-radius: $radiusVal;
+  -moz-border-radius: $radiusVal+px;
+  border-radius: $radiusVal+px;
+}
+
+
+
