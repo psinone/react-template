@@ -2,9 +2,10 @@
 	"name": "react-template",
 	"version": "1.0.0",
 	"description": "Build React project",
-	"main": "index.js",
+	"main": "./js/bundle.js",
 	"scripts": {
-		"build": "browserify --debug --transform babelify app.jsx --outfile bundle.js"
+		"build": "gulp",
+		"production": "gulp --env production"
 	},
 	"author": "",
 	"license": "ISC",
@@ -14,8 +15,11 @@
 		"react-addons-css-transition-group": "^15.3.1",
 		"browserify": "^10.2.1",
 		"babelify": "^6.1.1",
+		"gulp-uglifyjs": "^0.6.2",
 		"gulp": "^3.8.11",
 		"vinyl-source-stream": "^1.1.0",
-		"gulp-webserver": "^0.9.1"
+		"vinyl-buffer": "^1.0.0",
+		"gulp-webserver": "^0.9.1",
+		"yargs": "^6.2.0"
 	}
 }
