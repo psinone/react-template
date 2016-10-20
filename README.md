@@ -1,4 +1,4 @@
-# Compiler setup
+# Preparation
 1. install node.js (if you don't have)
 2. ```npm install --global gulp-cli``` (if you don't have gulp)
 
